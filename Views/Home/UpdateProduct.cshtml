@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Update Product";
+}
+
+@model ProductViewModel
+
+<h1>Update Product</h1>
+
+<form method="post" asp-controller="Home" asp-action="UpdateProduct">
+
+    <label asp-for="Name"></label>
+    <input asp-for="Name" class="form-control mb-3" type="text" required />
+
+    <label asp-for="Price"></label>
+    <input asp-for="Price" class="form-control mb-3" type="number" required />
+
+    <label asp-for="Qty"></label>
+    <input asp-for="Qty" class="form-control mb-3" type="number" required />
+
+    <button type="submit" class="btn btn-primary">Edit Product</button>
+
+
+</form>

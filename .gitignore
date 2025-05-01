@@ -1,0 +1,14 @@
+.vs/
+*.user
+*.suo
+*.sdf
+*.cache
+*.dbmdl
+*.log
+*.pdb
+*.vscode/
+bin/
+obj/
+packages/
+*.DotSettings.user
+*.sln.docstates

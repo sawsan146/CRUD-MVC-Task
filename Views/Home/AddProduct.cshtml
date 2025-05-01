@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Add Product";
+}
+<h1>Add Product</h1>
+@model ProductViewModel
+@* tag helper *@
+<form method="post" asp-controller="Home" asp-action="AddProduct">
+
+    <label asp-for="Name"></label>
+    <input asp-for="Name" class="form-control mb-3" type="text" required/>
+    @* html helper *@
+    @* @Html.TextBox("Name",null,new{style="color:red",@class="form-control"})
+    @Html.TextBoxFor(s => s.Name, new { @class = "form-control"})) *@
+
+    <label asp-for="Price"></label>
+    <input asp-for="Price" class="form-control mb-3" type="number"  required/>
+
+    <label asp-for="Qty"></label>
+    <input asp-for="Qty" class="form-control mb-3" type="number" required/>
+
+    <button type="submit" class="btn btn-primary">Add Product</button>
+    
+
+</form>
